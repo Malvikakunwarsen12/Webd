@@ -1,0 +1,177 @@
+.header
+{
+    height:55px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color:white;
+    border-bottom-width:1px;
+    border-bottom-color:rgb(220, 218, 218);
+    border-bottom-style:solid;
+    z-index:100;
+}
+.left-section
+{
+  
+width:155px;
+  display:flex;
+  align-items:center;
+}
+.middle-section
+{
+    flex:1;
+    margin-left:68px;
+    margin-right:35px;
+    max-width:590px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+.right-section
+{
+   width:120px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    margin-right:25px;
+    flex-shrink:0;
+}
+.menu
+{
+    margin-left:24px;
+    margin-right:15px;
+    height:22px;
+    width:20px;
+}
+.youtube-logo
+{
+  height:52px;
+  width:120px;
+}
+
+.search-bar
+{
+    flex:1;
+    height:34px;
+    width:470px;
+    padding-left:5px;
+    font-size:16px;
+    border-width:1px;
+    border-style:solid;
+    border-color:lightgray;
+    width:0;
+}
+.search-button
+{
+   height:37px;
+   width:60px;
+   border-width:1px;
+   border-style:solid;
+   border-color:lightgray;
+   background-color:white;
+   margin-left:-1px;
+   position:relative;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+}
+.voice-button
+{
+    height:40px;
+    width:50px;
+    border:none;
+    background-color:white;
+    position:relative;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+}
+
+.search-bar::placeholder
+{
+    color:rgb(144, 139, 139);
+    font-size:15px;
+    font-weight:500;
+}
+.search-icon
+{
+    height:16px;
+     width:15px;
+  
+}
+.voice-icon
+{
+    height:22px;
+     width:22px;
+    border-radius:20px;
+}
+
+
+.create-icon
+{
+    height:15px;
+   object-fit:contain;
+}
+
+.notf-icon
+{
+    height:22px;
+    width:20px;
+}
+
+.myprofile-icon
+{
+    height:28px;
+    border-radius:20px;
+}
+.notf-container
+{
+    position:relative;
+
+}
+.notf-number
+{
+    position:absolute;
+    background-color:rgb(203, 5, 5);
+    right:-7px;
+    top:-3px;
+    color:white;
+  
+    font-family:Roboto;
+    font-size:12px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:1px;
+    padding-bottom:1px;
+    border-radius:30px;
+    box-shadow:white;
+}
+.search-button .tooltip,.voice-button .tooltip
+{
+  position:absolute;
+  background-color:gray;
+  color:white;
+  font-size:12px;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:6px;
+  padding-right:6px;
+  border-radius:2px;
+  font-family:Roboto;
+  bottom:-18px;
+
+  
+  opacity:0;
+  transition:opacity 0.15s;
+  white-space:nowrap;
+  pointer-events:none;
+}
+.search-button:hover  .tooltip, .voice-button:hover  .tooltip
+{
+ opacity:1;
+}
